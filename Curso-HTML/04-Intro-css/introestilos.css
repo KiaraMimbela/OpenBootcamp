@@ -1,0 +1,40 @@
+/*estilos para colores*/
+.colores{
+    color: crimson;
+}
+.color-hexadecimal{
+    color: #C0D6DF;
+}
+.color-rgb{
+    color: rgb(200, 1, 300);
+}
+.color-rgba{
+    color: rgba(10, 10, 10, 0.99);
+}
+/*fondos*/
+.fondo{
+    background-color: aquamarine;
+    background-image: url("https://i.pinimg.com/736x/24/32/43/2432431218d935dc9676c4dca96fd4e7.jpg");
+    background-position: right bottom;
+}
+.fondo-interno{
+    background-color: aquamarine;
+    background-image: url("imagenes/marmoleado.webp");
+    background-position: left bottom;
+}
+/* Tamaños */
+.ancho{
+    background-color: skyblue;
+    width: 100px;
+}
+.alto{
+    background-color: olive;
+    height: 200px;
+}
+.tarjeta{
+    border-style: solid;
+    border-color: blueviolet;
+    border-width: 1px;
+    padding: 10px;
+    margin: 20px;
+}

@@ -1,0 +1,25 @@
+h1{
+    color: blueviolet;
+}
+
+/*Estoy probando colores y fuentes*/
+p{
+    color: cadetblue;
+    font-size: 23px;
+}
+#primera{
+    color: blue;
+    font-size: 15px;
+}
+#segunda{
+    color: darkgreen;
+}
+.encabezado{
+    font-size: 24px;
+}
+*{
+    color: yellow;
+}
+.autor ,.fecha ,.ubicacion{
+    text-decoration: underline;
+}
