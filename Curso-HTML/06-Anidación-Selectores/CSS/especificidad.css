@@ -1,0 +1,16 @@
+h1#h1-id.h1-class {
+    color: salmon ;
+}
+
+.h1-class {
+    color: yellow;
+}
+
+h1 {
+    color: blue !important;
+    /*EVITAR en la medida el uso del !importamt*/
+}
+
+p {
+    color: red;
+}
