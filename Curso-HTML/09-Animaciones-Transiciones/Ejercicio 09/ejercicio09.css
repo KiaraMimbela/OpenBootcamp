@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-moderno {
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    background-color: #7532FA;
+    border-radius: 20px;
+    border-bottom: 2px solid #5c26c9;
+    border-right: 2px solid #5c26c9;
+}
+
+.btn-moderno:hover {
+    color: #f53e84;
+    background-color: #212121;
+    border: none;
+    box-shadow: 0 0 8px black;
+    transform: translateY(-5px);
+    transition: 0.4s;
+}
