@@ -1,0 +1,27 @@
+.row div {
+    margin:0.25rem;
+}
+
+.col {
+    background-color: slateblue;
+}
+
+.col-sm {
+    background-color: salmon;
+}
+
+.col-md {
+    background-color: skyblue;
+}
+
+.col-lg {
+    background-color: yellowgreen;
+}
+
+.col-xl {
+    background-color: gainsboro;
+}
+
+.col-xxl {
+    background-color: gold;
+}
