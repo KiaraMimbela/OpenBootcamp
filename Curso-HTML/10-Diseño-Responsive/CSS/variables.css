@@ -1,0 +1,19 @@
+:root {
+    /*SE DEFINEN VARIABLES*/
+    --color-principal: rgb(192, 70, 208);
+    --ancho-principal: 350px
+}
+
+.titulo {
+    color: var(--color-principal);
+}
+
+.footer {
+    color: var(--color-principal);
+}
+
+.contenedor {
+    background-color: rgb(222, 219, 219);
+    padding: 1rem;
+    max-width: var(--ancho-principal);
+}
