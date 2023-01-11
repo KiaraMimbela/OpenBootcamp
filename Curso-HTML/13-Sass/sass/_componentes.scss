@@ -1,0 +1,21 @@
+.btn {
+    margin: 5px;
+    padding: 0.30rem 0.8rem;
+    border: none;
+    border-radius: 20px;
+    background-color: cadetblue;
+    color: white;
+
+    &:hover {
+        color: cadetblue;
+        background-color: transparent;
+        border: 2px solid cadetblue;
+        cursor: pointer;
+    }
+}
+
+.btn-2 {
+    //heredar de .btn todo sus atributos definidos
+    @extend .btn;
+    border-radius: 0;
+}

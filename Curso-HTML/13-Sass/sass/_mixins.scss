@@ -1,0 +1,11 @@
+//Variable
+$text-color: #2f2f2f;
+
+//mixin "función" que contiene variables definidas
+// se les pude pasar un párametro definido o no
+@mixin formato-texto($bg-color:  rgba(51, 149, 116, 0.767)) {
+    color: $text-color;
+    text-transform: uppercase;
+    width: 50rem;
+    background-color:$bg-color;
+}

@@ -1,0 +1,111 @@
+// importando/Usando la documentación de sass
+@use "sass:string";
+@use "sass:math";
+@use "sass:list";
+@use "sass:selector";
+@use "sass:color";
+
+/// FUNCIONES CON CADENAS DE TEXTO
+@debug "hola";
+// debug, imprime en la consola
+@debug string.index("Helvetica Neue", "Neue");
+
+$string: "Helvetica";
+// inserta texto
+$newString: string.insert($string, " Bold", 10);
+
+@debug $newString;
+@debug string.length($newString);
+
+// recorta la letra(el string/variable, inicio de donde se va a cortar, donde termina el corte)
+@debug string.slice($newString, 5, 9);
+
+@debug string.to-upper-case("Roboto Mono");
+@debug string.to-lower-case("Roboto Mono");
+
+@debug string.unique-id();
+
+/// FUNCIONES CON NÚMEROS
+@debug math.$e;
+@debug math.$pi;
+
+@debug math.floor(2.7);
+//aproxima al número entero que esta antes
+@debug math.ceil(3.67);
+//aproxima al número entero que le sigue
+@debug math.round(4.6);
+
+
+@debug math.clamp(0, 8,10);
+//rangos entre números
+@debug math.max(3,4,3,5,9,399);
+//devuelve el mayor número
+@debug math.min(3,4,3,5,9,399);
+//devuelve el menor número
+
+@debug math.abs(-8);
+//lo vuelve positivo
+
+@debug math.pow(2,10);
+//exponentes: base, exponente
+
+@debug math.cos(math.$pi);
+@debug math.sin(math.$pi);
+@debug math.tan(math.$pi);
+
+/// FUNCIONES CON LISTAS
+$lista1: 10px, 10px, 0px, 15px;
+
+@debug $lista1;
+@debug list.append($lista1, 25px, space);
+// agregar un nuevo valor
+
+$border-custom: solid 1px #ccc;
+@debug list.index($border-custom, solid);
+// vr en la posición
+
+//$border-2: [solid,  1px, #ccc];
+//@debug list.is-bracketed($border-2);
+
+@debug list.join($lista1, $border-custom, auto);
+//juntar dos listas
+
+@debug list.length(list.join($lista1, $border-custom, auto));
+// el largo de la lista
+@debug list.separator($lista1);
+//saber su separador
+
+@debug list.set-nth($border-custom,2 ,2px);
+// crea una copia de la (lista, posicion, cambio)
+@debug $border-custom;
+
+
+/// FUNCIONES DE SELECTOR
+$selector-1: "a";
+$selector-2: ".disabled";
+@debug selector.append($selector-1, $selector-2);
+
+/// FUNCIONES DE COLOR
+
+$color: #d8d9;
+@debug color.adjust($color, $red: -50, $alpha: -0.5);
+$color-2: rgba(171, 136, 221, 0.1);
+
+// color complementario
+@debug color.complement($color);
+$color-comp: rgba(136, 221, 136, 0.6);
+
+@debug darken($color, 30%);
+$color-dark: rgba(159, 45, 159, 0.6);
+
+@debug lighten($color, 30%);
+$color-light:rgba(255, 255, 255, 0.6);
+
+@debug color.red($color);
+@debug color.green($color);
+@debug color.blue($color);
+
+@debug color.hue($color);
+
+@debug color.invert($color);
+$color-invert: rgba(34, 119, 34, 0.6);

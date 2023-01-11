@@ -1,0 +1,16 @@
+// Importaciones
+//Componentes
+//@import "sass/componentes"; ANTES SE USABA.. AHORA ES 
+@use "sass/componentes";
+//Mixins
+@use "sass/mixins";
+//Estilos
+@use "sass/estilos";
+
+//Páginas
+//página principal
+//página de contacto
+//página de aviso legal
+
+//otros; usando la documentacion de sass 
+@use "sass/builtin";

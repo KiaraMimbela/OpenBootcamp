@@ -1,0 +1,43 @@
+//para usar el @incluide formato-texto ubicado en mixins debemos importarlo
+@import "mixins";
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    background-color: aliceblue;
+    min-height: 100vh;
+    padding: 0.5rem;
+}
+
+h1 {
+    margin: 0;
+    //para usar el mixin debe incluirse con
+    @include formato-texto();
+}
+
+p {
+    @include formato-texto(rgba(152, 222, 213, 0.74));
+}
+
+.listado {
+    width: 10rem;
+    background-color: rgb(193, 240, 240);
+    padding: 0.3rem;
+
+    ul {
+        margin: 0 0.5rem;
+
+        li {
+            list-style: none;
+
+            &:hover {
+                color: darkblue;
+                cursor: pointer;
+            }
+        }
+    }
+}
