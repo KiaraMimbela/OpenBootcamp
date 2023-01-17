@@ -15,7 +15,3 @@ var sinEspacios = estudiante.replace(/ /g, "");
 
 var booleana = estudiante.includes(nombre);
 console.log(booleana);
-
-
-
-
