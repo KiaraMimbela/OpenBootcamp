@@ -1,4 +1,4 @@
-// .some() - si algun elemento del array cumple ña condición
+// .some() - si algun elemento del array cumple una condición
 
 const array = [3, 7, 2, 4, 7, 9, 45, 26, -7, 561, 23];
 
