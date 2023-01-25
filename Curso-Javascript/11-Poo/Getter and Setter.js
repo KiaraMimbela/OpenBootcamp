@@ -15,7 +15,7 @@ class Persona {
         console.log(`Hola, mi nombre es ${this.#nombre}, tengo ${this.#edad} años.`)
     }
 
-    obtenNombre() {
+    obtenNombre() { // función getter => nos permite acceder (de forma controlada) a algún atributo protegido
         return this.#nombre
     }
 
@@ -27,7 +27,7 @@ class Persona {
         return this.#edad
     }
 
-    setEdad(nuevaEdad) {
+    setEdad(nuevaEdad) { // función setter => nos permite cambiar valores de los atributos
         this.#edad = nuevaEdad
     }
 }
